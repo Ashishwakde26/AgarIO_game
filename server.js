@@ -6,6 +6,6 @@ const socketio = require('socket.io');
 const io = socketio(expressServer);
 
 
-module.exports = [
+module.exports = {
     app, io
-]
+}

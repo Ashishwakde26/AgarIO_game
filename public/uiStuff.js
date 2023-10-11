@@ -6,6 +6,7 @@ canvas.height = wHeight;
 canvas.width = wWidth;
 const player = {};
 
+let orbs = [];
 
 const loginModal = new bootstrap.Modal(document.querySelector('#loginModal'))
 const spawnModal = new bootstrap.Modal(document.querySelector('#spawnModal'))
@@ -26,7 +27,6 @@ document.querySelector('.name-form').addEventListener('submit', (e) => {
     console.log(player);
 })
 
-
 document.querySelector('.start-game').addEventListener('click', (e) => {
     spawnModal.hide();
 
@@ -34,4 +34,3 @@ document.querySelector('.start-game').addEventListener('click', (e) => {
     elArray.forEach(el => el.removeAttribute('hidden'))
     init();
 })
-
